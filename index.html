@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNMAKE | 誰もが最短距離で、自分を好きになれる世界を</title>
+  <meta name="description" content="UNMAKEは、外見・学力・資格・投資・芸術など様々な分野で、自己改善を統合するプロジェクト。無料モニター募集中。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0c; --fg:#101114; --ink:#0f1115; --text:#0e0f12; --white:#fff; --muted:#6b7280; --accent:#0ea5e9; --card:#0f141b; --stroke:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0;}
+    body{font-family: Inter, "Noto Sans JP", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:#0f1115; background:#ffffff; line-height:1.6;}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1120px; margin:0 auto; padding:0 24px}
+    /* Header */
+    header{position:fixed; top:0; left:0; right:0; height:64px; display:flex; align-items:center; backdrop-filter:saturate(180%) blur(10px); background:rgba(255,255,255,.75); border-bottom:1px solid #edf2f7; z-index:50}
+    .brand{font-weight:800; letter-spacing:.08em}
+    nav a{margin-left:20px; font-weight:600; color:#1f2937}
+    nav a:hover{opacity:.7}
+    .cta{display:inline-block; padding:10px 16px; border-radius:999px; background:#111827; color:#fff; font-weight:700}
+    .cta--light{background:#fff; color:#111827; border:1px solid #e5e7eb}
+    /* Hero */
+    .hero{min-height:92vh; display:flex; align-items:center; justify-content:center; text-align:center; background:linear-gradient(180deg,#0f172a 0%, #111827 50%, #0b0f1a 100%); color:#e5e7eb; position:relative; overflow:hidden}
+    .hero::after{content:""; position:absolute; inset:-20% -10% auto -10%; height:60vh; background:radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,.35) 0%, rgba(59,130,246,.12) 35%, rgba(17,24,39,0) 70%);} 
+    .hero h1{font-size:56px; line-height:1.05; letter-spacing:.02em; margin:0 0 16px}
+    .hero p{max-width:780px; margin:0 auto 28px; color:#cbd5e1}
+    .hero .cta{background:#fff; color:#111827}
+    /* Sections */
+    section{padding:96px 0}
+    h2{font-size:36px; letter-spacing:.01em; margin:0 0 16px}
+    .lead{font-size:18px; color:#374151}
+    /* Cards */
+    .grid{display:grid; gap:20px}
+    @media(min-width:768px){.grid.cols-3{grid-template-columns:repeat(3,1fr)} .grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{border:1px solid #e5e7eb; border-radius:20px; padding:22px; background:#fff; box-shadow:0 10px 24px rgba(2,6,23,.04)}
+    .card:hover{transform:translateY(-2px); box-shadow:0 18px 32px rgba(2,6,23,.08); transition:all .25s ease}
+    .muted{color:#6b7280}
+    /* CTA band */
+    .band{background:#0f172a; color:#e5e7eb; text-align:center}
+    .band .cta{background:#fff; color:#111827}
+    /* Footer */
+    footer{padding:48px 0; border-top:1px solid #e5e7eb; color:#6b7280}
+    /* Buttons */
+    .btn{display:inline-block; padding:12px 18px; border-radius:14px; border:1px solid #e5e7eb; background:#fff; font-weight:700}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 12px 24px rgba(2,6,23,.08)}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; background:#eef2ff; color:#3730a3; margin:0 6px 6px 0}
+    .section-hint{font-size:14px; color:#6b7280; margin-bottom:8px}
+    .spacer{height:16px}
+  </style>
+  <script>
+    // smooth scroll for anchor links
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click',e=>{ e.preventDefault(); const id=a.getAttribute('href').slice(1); const el=document.getElementById(id); if(el){ window.scrollTo({top: el.offsetTop-72, behavior:'smooth'});} });
+      })
+    })
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between;">
+      <div class="brand">UNMAKE</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#track">実績</a>
+        <a href="#services">Services</a>
+        <a href="#join" class="cta">無料モニター</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container">
+        <h1>誰もが最短距離で、自分を好きになれる世界を</h1>
+        <p>外見・学力・資格・投資・芸術、すべてを通して<strong>「自分を好きになる」</strong>ためのUNMAKE。<br></p>
+        <div style="margin-top:20px">
+          <a href="#join" class="cta">無料モニター応募</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-hint">About</div>
+        <h2>UNMAKEとは</h2>
+        <p class="lead">UNMAKEは新時代の自己改善プラットフォーム。垢抜けを、外見に限らない<strong>統合的な自己改善</strong>として再定義します。UNMAKEは時間と資金を投資し、実際に成果を出してきたプロセスを体系化し、次世代に届けます。</p>
+        <div class="spacer"></div>
+        <div class="grid cols-3">
+          <div class="card">
+            <div class="muted">事業理念 - Motto</div>
+            <h3 style="margin:6px 0 8px">垢抜け = 自己肯定の獲得</h3>
+            <p class="muted">「自分を好きになるため、自分自身を磨く」。お客様一人一人に合わせた最適で最短の人生改革を。</p>
+          </div>
+          <div class="card">
+            <div class="muted">方法 - How</div>
+            <h3 style="margin:6px 0 8px">最短距離 × 再現性</h3>
+            <p class="muted">「成果が出る」手順を研究・実践・提供。モニター→ケース化→製品化のループで磨き込む。</p>
+          </div>
+          <div class="card">
+            <div class="muted">展望計画 - Future</div>
+            <h3 style="margin:6px 0 8px">将来の展開</h3>
+            <p class="muted">プロダクトやコミュニティへ拡張。企業・プロと連携し、人生設計のインフラを作り上げる。自分磨きをもっと身近に、当たり前の世界に。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Track Record -->
+    <section id="track" style="background:#f8fafc">
+      <div class="container">
+        <div class="section-hint">Track Record</div>
+        <h2>実績</h2>
+        <p class="lead">私がこれまでに投資を結果にしてきた、商品化を検討しているコンテンツ一覧</p>
+        <div class="spacer"></div>
+        <div class="grid cols-3">
+          <div class="card"><strong>3ヶ月</strong>で <strong>英検3級→準1級</strong><br><span class="muted">短期合格設計／超効率的な英語力強化</span></div>
+          <div class="card">根本から変える<strong>最短距離の垢抜け</strong> / 自己啓発<br><span class="muted">生活習慣／マインド／筋トレ／外見改善</span></div>
+          <div class="card"><strong>1週間</strong>で<strong>秘書検定2級</strong> / <strong>小型船舶免許</strong><br><span class="muted">ゴールからの逆算、スケジューリングと環境設定</span></div>
+          <div class="card">インデックス投資 <strong>4ヶ月で +33%</strong><br><span class="muted">※記録と内訳を公開／リスク説明付き</span></div>
+          <div class="card"><strong>独学</strong>ピアノ／バイオリン<br><span class="muted">独学での効率的な技能習得</span></div>
+          <div class="card"><strong>2025年中</strong>に<strong>モデル級の垢抜け</strong><br><span class="muted">現在の目標/進捗の公開</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="section-hint">Services</div>
+        <h2>提供コンテンツ</h2>
+        <p class="lead">お客様一人一人のご希望や環境に合わせた、最適の技能習得/人生改革プランをご提示します。</p>
+        <div class="spacer"></div>
+        <div class="grid cols-2">
+          <div class="card">
+            <h3>外見改善（垢抜け）</h3>
+            <p class="muted">生活習慣／髪型／ファッション／スキンケア/体型等。写真基準での客観評価とロードマップ・アクションプラン。</p>
+          </div>
+          <div class="card">
+            <h3>自己啓発・マインド・人生構築</h3>
+            <p class="muted">夢を叶える環境の設定/目標達成への習慣。体系化された「仕組み」をご提示</p>
+          </div>
+          <div class="card">
+            <h3>学力・資格短期合格</h3>
+            <p class="muted">ゴールからの逆算思考/最短距離の勉強法/効率化。英検等各種資格対応予定。</p>
+          </div>
+          <div class="card">
+            <h3>投資・金融リテラシー</h3>
+            <p class="muted">中高生向けの基礎講義/PDCAの徹底/実際の運用記録を共有。</p>
+          </div>
+          <div class="card">
+            <h3>独学スキル（音楽ほか）</h3>
+            <p class="muted">最短で形にする手順設計。アウトプット前提の斬新かつ効率的な独学法。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join / CTA -->
+    <section id="join" class="band">
+      <div class="container">
+        <h2>無料モニター募集</h2>
+        <p class="lead" style="color:#cbd5e1">"今だけ"、お客様のニーズに合わせた徹底コンサル。Before/Afterの公開に同意できる方。</p>
+        <div style="margin-top:20px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap">
+          <a class="cta" href="https://lin.ee/TiMQoga">公式LINE</a>
+          <a class="cta" href="https://www.instagram.com/togold194/">Instagram</a>
+          <a class="cta" href="https://x.com/togold194">Twitter</a>
+          <a class="cta" href="https://www.youtube.com/@togold194">YouTube</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px">
+      <div class="muted">© <span id="y"></span> UNMAKE</div>
+      <div class="muted">お問い合わせは公式SNSから。</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
