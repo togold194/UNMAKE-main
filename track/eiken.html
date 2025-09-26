@@ -2,92 +2,75 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>英検：3ヶ月で3級→準1級に至るまで | UNMAKE</title>
+  <meta name="description" content="短期合格設計／3ヶ月で英検3級→準1級へ。数字・時系列・証拠で伝える実績ページ。">
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
-  <!-- Fonts -->
+  <!-- Fonts（モノトーンに合う骨太見た目） -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
-  <meta name="description" content="短期合格設計／超効率的な英語力強化の実例。3ヶ月で英検3級→準1級に到達した学習設計・ステップ・データ・Q&A。">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#fff; --text:#0f172a; --muted:#64748b; --line:#e2e8f0;
-      --card:#fff; --brand:#7c3aed; --brand2:#06b6d4; --brand-weak:#f5f3ff;
-      --shadow:0 10px 30px rgba(2,6,23,.06); --radius:20px;
+      --bg:#fff; --text:#111; --muted:#666; --line:#e5e5e5; --line-strong:#ddd; --card:#fff;
+      --black:#111; --shadow:0 12px 30px rgba(0,0,0,.06); --radius:18px;
     }
     *{box-sizing:border-box}
     html,body{
-      margin:0;padding:0;background:var(--bg);color:var(--text);
+      margin:0; background:var(--bg); color:var(--text);
       font-family:"Zen Kaku Gothic New","Noto Sans JP",Inter,system-ui,-apple-system,Roboto,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
-      line-height:1.8; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-      letter-spacing:.01em;
+      line-height:1.85; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; letter-spacing:.01em;
+      font-feature-settings:"palt" 1;
     }
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 88px}
-    .toplink{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fff}
-
+    a{color:var(--black); text-decoration:underline}
+    .wrap{max-width:1120px; margin:0 auto; padding:28px 20px 96px}
+    .toplink{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none}
+    h1{font-size:clamp(28px,4.8vw,54px); line-height:1.12; margin:12px 0 8px; font-weight:900; letter-spacing:.005em}
+    h2{font-size:clamp(20px,2.3vw,28px); margin:0 0 14px; letter-spacing:.01em}
+    .lead{color:#444; margin:0}
+    .divider{height:1px; background:var(--line); margin:24px 0}
     /* ===== Hero ===== */
-    .hero{margin:28px 0 32px;padding:38px 26px;border-radius:28px;
-      background:linear-gradient(180deg,#f4f1ff, #ffffff 55%);
-      border:1px solid var(--line); box-shadow:var(--shadow);}
-    .herogrid{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}
-    .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;color:var(--muted)}
-    h1{font-size:clamp(28px,4.6vw,54px);line-height:1.1;margin:10px 0 12px;font-weight:900;letter-spacing:.01em}
-    .grad{background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{color:var(--muted);margin:0 0 18px}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
-    .kpi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow)}
-    .kpi .head{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}
-    .kpi b{font-family:Inter,system-ui,sans-serif;font-size:26px;letter-spacing:0}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;border:1px solid transparent;
-      background:linear-gradient(90deg,var(--brand),#6d28d9);color:#fff;font-weight:800;
-      box-shadow:0 6px 18px rgba(124,58,237,.25);transition:transform .08s ease, box-shadow .2s ease}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(124,58,237,.28)}
-    .btn.sub{background:#fff;color:var(--brand);border-color:var(--brand)}
-
-    .heroimg{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:260px;background:#f8fafc}
-    .heroimg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(255,255,255,.05),transparent 60%)}
-    .heroimg img{width:100%;height:100%;object-fit:cover}
-
+    .hero{margin:28px 0 34px; border:1px solid var(--line-strong); border-radius:24px; padding:34px 26px; background:#fff; box-shadow:var(--shadow)}
+    .herogrid{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center}
+    .badge{display:inline-block; font-size:12px; letter-spacing:.08em; color:#555; border:1px solid var(--line); padding:4px 10px; border-radius:999px; background:#fff}
+    .kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px}
+    .kpi{border:1px solid var(--line); border-radius:12px; padding:14px; background:#fff}
+    .kpi .label{font-size:12px; color:#777}
+    .kpi b{font-family:Inter,system-ui,sans-serif; font-variant-numeric:tabular-nums; font-size:26px; letter-spacing:0}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:12px; font-weight:800; text-decoration:none; border:1px solid #111; background:#111; color:#fff}
+    .btn.outline{background:#fff; color:#111}
+    .heroimg{position:relative; border:1px solid var(--line); border-radius:16px; overflow:hidden; min-height:260px; background:#f8f8f8}
+    .heroimg img{width:100%; height:100%; object-fit:cover}
     /* ===== Sections ===== */
-    .section{margin:46px 0}
-    .section h2{font-size:clamp(20px,2.6vw,28px);margin:0 0 14px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    .section{margin:48px 0}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px}
     .muted{color:var(--muted)}
-
-    /* 数字で見る */
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .stat{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff;box-shadow:var(--shadow)}
-    .stat .label{font-size:12px;color:var(--muted)}
-    .stat b{font-family:Inter,system-ui,sans-serif;font-size:30px;line-height:1;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
-
-    /* Before/After */
-    .baflex{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .ba{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fcfcff}
-    .ba h3{margin:0 0 6px}
-    .pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:#ede9fe;margin-left:6px}
-    .baimg{height:210px;border-radius:12px;background:#f1f5f9;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center}
-
-    /* Timeline */
+    /* By the numbers */
+    .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+    .stat{border:1px solid var(--line); border-radius:14px; padding:16px; background:#fff}
+    .stat .label{font-size:12px; color:#777}
+    .stat b{font-family:Inter,system-ui,sans-serif; font-variant-numeric:tabular-nums; font-size:30px; line-height:1}
+    /* Before/After（モノクロの情報設計） */
+    .baflex{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    .ba{border:1px solid var(--line); border-radius:14px; padding:16px; background:#fff}
+    .pill{display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:#555; margin-left:6px}
+    .ba ul{padding-left:1.1em; margin:10px 0 0}
+    /* Timeline（黒基調） */
     .timeline{position:relative}
-    .timeline::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:2px;background:var(--line)}
-    .step{position:relative;margin:0 0 18px 36px}
-    .dot{position:absolute;left:-26px;top:6px;width:12px;height:12px;background:linear-gradient(90deg,var(--brand),var(--brand2));border-radius:50%;box-shadow:0 0 0 4px #f5f3ff}
-
-    /* Proof */
-    .proof{aspect-ratio:16/9;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#f8fafc}
-
-    .tagrow{display:flex;flex-wrap:wrap;gap:8px}
-    .tag{font-size:12px;padding:4px 8px;border-radius:999px;background:#F3F4F6;border:1px solid var(--line)}
-
-    @media (max-width: 920px){
-      .herogrid,.baflex{grid-template-columns:1fr}
+    .timeline::before{content:""; position:absolute; left:14px; top:0; bottom:0; width:2px; background:#111}
+    .step{position:relative; margin:0 0 18px 36px}
+    .dot{position:absolute; left:-26px; top:6px; width:12px; height:12px; background:#111; border-radius:50%}
+    /* Proof（写真を主役に） */
+    .proof{border:1px solid var(--line-strong); border-radius:16px; overflow:hidden; background:#f7f7f7}
+    .proof img{width:100%; height:100%; object-fit:cover}
+    /* Responsive */
+    @media (max-width:980px){
+      .herogrid{grid-template-columns:1fr}
       .kpis{grid-template-columns:repeat(2,1fr)}
       .stats{grid-template-columns:repeat(2,1fr)}
+      .baflex{grid-template-columns:1fr}
       .hero{padding:26px 16px}
     }
   </style>
@@ -101,138 +84,129 @@
       <span class="badge">実績ケース / 英検</span>
       <div class="herogrid">
         <div>
-          <h1><span class="grad">3ヶ月で 英検3級 → 準1級</span> に至るまで</h1>
-          <p class="lead">短期合格設計／超効率的な英語力強化のストーリー。</p>
+          <h1>3ヶ月で <u>英検3級 → 準1級</u> に至るまで</h1>
+          <p class="lead">短期合格設計。数字と時系列、そして証拠で伝える“UNMAKEの実例”。</p>
 
           <div class="kpis">
-            <div class="kpi">
-              <div class="head">期間</div><b>90日</b>
-            </div>
-            <div class="kpi">
-              <div class="head">到達レベル</div><b>準1級</b>
-            </div>
-            <div class="kpi">
-              <div class="head">学習法</div><b>独学×設計</b>
-            </div>
+            <div class="kpi"><div class="label">期間</div><b>90日</b></div>
+            <div class="kpi"><div class="label">到達レベル</div><b>準1級</b></div>
+            <div class="kpi"><div class="label">学習法</div><b>独学×設計</b></div>
           </div>
 
           <div class="cta">
             <a class="btn" href="#contact">無料相談・応募</a>
-            <a class="btn sub" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細をnoteで読む</a>
+            <a class="btn outline" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細をnoteで読む</a>
           </div>
         </div>
 
-        <!-- 写真：横長の合格証＋パス単を推奨。ファイルを下記に置く -->
+        <!-- 写真：横長1枚のみ（主役） -->
         <figure class="heroimg">
-          <img src="/assets/eiken/hero-passbooks.jpg" alt="英検準1級 合格証と英検パス単の写真">
+          <!-- 画像を /assets/eiken/passbooks-hero.jpg に配置 -->
+          <img src="/assets/eiken/passbooks-hero.jpg" alt="英検準1級 合格証と単語帳">
         </figure>
       </div>
     </section>
 
-    <!-- ===== 数字で見る 実績 ===== -->
+    <!-- ===== 数字で見る ===== -->
     <section class="section">
       <h2>数字で見る実績</h2>
       <div class="stats">
         <div class="stat"><div class="label">合格まで</div><b>90</b>日</div>
         <div class="stat"><div class="label">最大学習量（11月）</div><b>10</b>時間/日</div>
-        <div class="stat"><div class="label">合格ライン</div><b>1792</b>点（準1級）</div>
-        <div class="stat"><div class="label">到達</div><b>準1級</b></div>
+        <div class="stat"><div class="label">準1級 合格最低点</div><b>1792</b>点</div>
+        <div class="stat"><div class="label">実行フェーズ</div><b>独学</b>×設計</div>
       </div>
-      <p class="muted" style="margin-top:8px">※ 詳細の背景・経緯はnoteに記載。</p>
+      <div class="divider"></div>
+      <p class="muted">※ 詳細の背景・学習ログは <a href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">note記事</a> に掲載。</p>
     </section>
 
-    <!-- ===== Before / After ===== -->
+    <!-- ===== Before / After（要点だけ、モノクロ） ===== -->
     <section class="section">
       <h2>Before / After</h2>
       <div class="baflex">
         <div class="ba">
           <h3>Before <span class="pill">3級レベル</span></h3>
-          <div class="baimg">学習前の状態（要約）</div>
           <ul>
-            <li>語彙・文法の基礎不足で精読体力が弱い</li>
-            <li>音声の取りこぼしが多く設問処理が遅い</li>
-            <li>勉強法が分散し継続のコツが掴めていない</li>
+            <li>語彙・文法の基礎が薄く、精読体力が不足</li>
+            <li>音声の取りこぼしが多く、設問処理が遅い</li>
+            <li>勉強法が分散し、復習が“薄い”</li>
           </ul>
         </div>
         <div class="ba">
           <h3>After <span class="pill">準1級 合格</span></h3>
-          <div class="baimg">学習後の状態（要約）</div>
           <ul>
             <li>高頻出語彙を面で定着、長文の情報抽出が安定</li>
-            <li>リスニングは問型ごとに「拾う音」を固定</li>
+            <li>パート別に“拾う音”を固定してスコア安定</li>
             <li>ライティングは型×ネタ帳で即時生成</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ===== 時系列で見る 3ヶ月 ===== -->
+    <!-- ===== 時系列（北原式の積み上げ） ===== -->
     <section class="section">
-      <h2>時系列で見る3ヶ月</h2>
+      <h2>時系列で見る 3ヶ月</h2>
       <div class="card timeline">
         <div class="step">
           <span class="dot"></span>
-          <h3>9/16：準2級 不合格 → 戦略転換</h3>
-          <p class="muted">準2級を捨てて2級に集中する方針へ。</p>
+          <h3>9/16　準2級 不合格 → 方針転換</h3>
+          <p class="muted">準2級を切り、2級に集中。基礎の“面取り”から再設計。</p>
         </div>
         <div class="step">
           <span class="dot"></span>
-          <h3>10/30：英検2級 合格</h3>
-          <p class="muted">土台を作り直し、11月へ加速。</p>
+          <h3>10/30　英検2級 合格</h3>
+          <p class="muted">土台を固め、過去問はブロック循環で復習厚めに。</p>
         </div>
         <div class="step">
           <span class="dot"></span>
-          <h3>11/23：準1級の合格最低点 1792点を初突破</h3>
-          <p class="muted">本番形式の過去問で合格ラインを超える。</p>
+          <h3>11/23　準1級 合格最低点 1792点を初突破</h3>
+          <p class="muted">本番形式でラインを超え、仕上げへ。</p>
         </div>
         <div class="step">
           <span class="dot"></span>
-          <h3>12月：準1級 合格</h3>
-          <p class="muted">入試も合格。90日で3級相当→準1級到達。</p>
+          <h3>12月　準1級 合格</h3>
+          <p class="muted">3ヶ月で3級相当→準1級到達。</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== 学習設計（要点） ===== -->
+    <!-- ===== 証拠（写真を大きく1枚） ===== -->
+    <section class="section">
+      <h2>証拠</h2>
+      <div class="proof" style="aspect-ratio:16/9">
+        <img src="/assets/eiken/passbooks-hero.jpg" alt="英検準1級 合格証と単語帳（証拠写真）">
+      </div>
+      <p class="muted" style="font-size:12px; margin-top:6px">※ 追加の写真・点数推移グラフはnoteに掲載。</p>
+    </section>
+
+    <!-- ===== コア設計（短く・黒） ===== -->
     <section class="section">
       <h2>学習設計のコア</h2>
       <div class="card">
-        <div class="tagrow" style="margin-bottom:8px">
-          <span class="tag">やる順序</span><span class="tag">捨てる判断</span><span class="tag">復習の厚み</span>
-          <span class="tag">音読×シャドーイング</span><span class="tag">テンプレ活用</span>
-        </div>
-        <ul>
-          <li><b>1ヶ月目：</b>頻出語彙の面取り／文法は出題範囲に限定／音読とシャドーイング</li>
-          <li><b>2ヶ月目：</b>長文は設問先読み→根拠マーキング→選択肢排除の三段固定／過去問はブロック回し</li>
-          <li><b>3ヶ月目：</b>リスニングは問型ごとに聞くポイントを固定／ライティングは型＋論点ネタ帳</li>
+        <ul style="margin:8px 0">
+          <li><b>やる順序：</b>語彙→文法→読解ブロック→音声→ライティング。</li>
+          <li><b>捨てる判断：</b>出題範囲外／効果の薄い教材は切る。</li>
+          <li><b>復習の厚み：</b>間隔を詰めた反復で“定着”を最優先。</li>
         </ul>
       </div>
     </section>
 
-    <!-- ===== 証拠（写真） ===== -->
+    <!-- ===== CTA（近接配置） ===== -->
     <section class="section">
-      <h2>証拠</h2>
-      <div class="card proof">
-        <!-- hero画像と同じ1枚を再掲してもOK。差し替えるならここだけ別画像も可 -->
-        <img src="/assets/eiken/hero-passbooks.jpg" alt="英検準1級 合格証と英検パス単の写真" style="width:100%;height:100%;object-fit:cover">
-      </div>
-      <p class="muted" style="font-size:12px;margin-top:6px">※ 詳細は <a href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">note記事</a> に掲載。</p>
-    </section>
-
-    <!-- ===== CTA ===== -->
-    <section class="section">
-      <div class="card">
-        <h2 style="margin-top:0">無料相談・モニター応募</h2>
-        <p class="muted">現在地に合わせて最短ルートを再設計します。まずはヒアリングから。</p>
-        <div class="cta">
+      <div class="card" style="display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap">
+        <div>
+          <h2 style="margin:0">無料相談・モニター応募</h2>
+          <p class="muted" style="margin:6px 0 0">現在地をヒアリングし、あなた用の“最短ルート”を敷き直します。</p>
+        </div>
+        <div class="cta" style="margin:0">
           <a class="btn" id="contact" href="#contact">LINE / フォームへ</a>
-          <a class="btn sub" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細レポートを読む</a>
+          <a class="btn outline" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細をnoteで読む</a>
         </div>
       </div>
     </section>
 
     <footer class="section muted" style="font-size:13px">
-      UNMAKEならではの強み：<b>短期×設計主義</b>（やる順序／捨てる判断／復習の厚み）。実質的に中高生の立場になれる強さ。
+      UNMAKEならではの強み：<b>“短期×設計主義”</b>（やる順序／捨てる判断／復習の厚み）。実例で示す。
     </footer>
   </div>
 </body>
