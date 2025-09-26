@@ -6,212 +6,33 @@
   <title>英検：3ヶ月で3級→準1級に至るまで | UNMAKE</title>
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
-  <meta name="description" content="短期合格設計／超効率的な英語力強化のリアル実例。3ヶ月で英検3級→準1級に到達した学習設計・ステップ・データ・Q&A。">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter + Noto Sans JP（軽量＆可変） -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <meta name="description" content="短期合格設計／超効率的な英語力強化の実例。3ヶ月で英検3級→準1級に到達した学習設計・ステップ・データ・Q&A。">
   <style>
     :root{
-      --bg:#ffffff;
-      --text:#111827;
-      --muted:#6b7280;
-      --card:#ffffff;
-      --line:#e5e7eb;
-      --brand:#7c3aed;     /* 紫基調 */
-      --brand-weak:#ede9fe;
-      --ok:#16a34a;
+      --bg:#fff;
+      --text:#0f172a;        /* slate-900 */
+      --muted:#64748b;       /* slate-500 */
+      --line:#e2e8f0;        /* slate-200 */
+      --card:#fff;
+      --brand:#7c3aed;       /* violet-600 */
+      --brand-weak:#f3e8ff;  /* violet-100 */
+      --brand2:#06b6d4;      /* cyan-500 (アクセント) */
+      --shadow:0 10px 30px rgba(2,6,23,.06);
+      --radius:18px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.7}
+    html,body{
+      margin:0;padding:0;background:var(--bg);color:var(--text);
+      font-family:"Noto Sans JP", Inter, system-ui, -apple-system, Roboto, "Hiragino Kaku Gothic ProN","Yu Gothic", Meiryo, sans-serif;
+      line-height:1.8;-webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      letter-spacing: .01em;
+    }
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
-    .wrap{max-width:1040px;margin:0 auto;padding:24px 20px 72px}
-    .toplink{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fff}
-    .hero{margin:24px 0 28px;padding:36px 20px;border-radius:18px;background:linear-gradient(180deg,var(--brand-weak),#fff)}
-    .hero h1{font-size: clamp(22px, 3.6vw, 40px);line-height:1.2;margin:0 0 8px}
-    .hero p{margin:0;color:var(--muted)}
-    .herogrid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;margin-top:18px}
-    .heroimg{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fafafa;min-height:220px}
-    .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;color:var(--muted)}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}
-    .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
-    .kpi b{font-size:22px}
-    .section{margin:38px 0}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
-    .baflex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .ba{border:1px dashed var(--line);border-radius:14px;padding:14px;background:#fcfcff}
-    .ba h3{margin:0 0 6px}
-    .ba small{color:var(--muted)}
-    .baimg{height:200px;border-radius:10px;background:#f3f4f6;border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
-    .timeline{position:relative;margin-left:6px}
-    .timeline::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:var(--line)}
-    .step{position:relative;margin:0 0 18px 30px}
-    .dot{position:absolute;left:-22px;top:6px;width:12px;height:12px;background:var(--brand);border-radius:50%}
-    .pill{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--brand-weak);font-size:12px;margin-left:6px}
-    .qa{display:grid;gap:12px}
-    .qaitem{border:1px solid var(--line);border-radius:14px;padding:14px}
-    .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid var(--brand);background:var(--brand);color:#fff;font-weight:600}
-    .btn.sub{background:#fff;color:var(--brand)}
-    .note-embed{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:12px;background:#fafafa}
-    .note-embed img{width:44px;height:44px;border-radius:8px;border:1px solid var(--line)}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .muted{color:var(--muted)}
-    figure{margin:0}
-    figcaption{font-size:12px;color:var(--muted);margin-top:6px}
-    .tagrow{display:flex;flex-wrap:wrap;gap:8px}
-    .tag{font-size:12px;padding:4px 8px;border-radius:999px;background:#F3F4F6;border:1px solid var(--line)}
-    @media (max-width: 860px){
-      .herogrid,.baflex,.grid2{grid-template-columns:1fr}
-      .kpis{grid-template-columns:repeat(2,1fr)}
-      .hero{padding:24px 16px}
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <a href="/index.html" class="toplink">← Top</a>
-
-    <!-- ===== Hero ===== -->
-    <section class="hero">
-      <span class="badge">実績ケース / 英検</span>
-      <div class="herogrid">
-        <div>
-          <h1>3ヶ月で <span style="color:var(--brand)">英検3級 → 準1級</span> に至るまで</h1>
-          <p>短期合格設計／超効率的な英語力強化のストーリー。</p>
-
-          <div class="kpis">
-            <div class="kpi"><div class="muted">期間</div><b>90日</b></div>
-            <div class="kpi"><div class="muted">到達レベル</div><b>準1級</b></div>
-            <div class="kpi"><div class="muted">学習法</div><b>独学×設計</b></div>
-          </div>
-
-          <div style="margin-top:14px" class="cta">
-            <a class="btn" href="#contact">無料相談・応募</a>
-            <a class="btn sub" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細をnoteで読む</a>
-          </div>
-        </div>
-
-        <!-- ヒーロー画像：合格証や勉強風景を配置 -->
-        <figure class="heroimg">
-          <!-- ↓ここにHero画像を置く（例） -->
-          <!-- <img src="/assets/eiken/hero.jpg" alt="英検準1級 合格証と勉強風景" style="width:100%;height:100%;object-fit:cover"> -->
-        </figure>
-      </div>
-    </section>
-
-    <!-- ===== Before / After ===== -->
-    <section class="section">
-      <h2>Before / After</h2>
-      <div class="baflex">
-        <div class="ba">
-          <h3>Before <small class="pill">3級レベル</small></h3>
-          <div class="baimg"><!-- <img src="/assets/eiken/before.jpg" alt="学習前" style="width:100%;height:100%;object-fit:cover"> -->画像（学習前）</div>
-          <ul>
-            <li>語彙の基礎が不足、文章を精読する体力が弱い</li>
-            <li>音声の取りこぼしが多く、設問処理が遅い</li>
-            <li>勉強法が分散し継続のコツが掴めていない</li>
-          </ul>
-        </div>
-        <div class="ba">
-          <h3>After <small class="pill">準1級 合格</small></h3>
-          <div class="baimg"><!-- <img src="/assets/eiken/after.jpg" alt="学習後" style="width:100%;height:100%;object-fit:cover"> -->画像（学習後）</div>
-          <ul>
-            <li>頻出語彙を面で押さえ、長文の情報抽出が安定</li>
-            <li>リスニングで要点先取り、選択肢検証が高速化</li>
-            <li>ライティングは型×ネタ帳で量から質へ</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 3ヶ月の設計（タイムライン） ===== -->
-    <section class="section">
-      <h2>3ヶ月の設計</h2>
-      <div class="card timeline">
-        <div class="step">
-          <span class="dot"></span>
-          <h3>1ヶ月目：基礎の面取り <span class="pill">単語・文法・音の土台</span></h3>
-          <p class="muted">頻出語彙を「品詞ごと」に束で覚える／文法は出題範囲に絞って例文暗唱／音読とシャドーイングで英語回路を起動。</p>
-        </div>
-        <div class="step">
-          <span class="dot"></span>
-          <h3>2ヶ月目：読解×過去問ブロック演習 <span class="pill">処理速度</span></h3>
-          <p class="muted">長文は設問先読み→根拠線引き→即判断。過去問はブロック単位で回して復習を厚く。</p>
-        </div>
-        <div class="step">
-          <span class="dot"></span>
-          <h3>3ヶ月目：リスニング＆ライティング詰め <span class="pill">型化と安定</span></h3>
-          <p class="muted">問型ごとに聞くポイントを固定。ライティングは型＋論点ネタ帳で本番テンプレを高速展開。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== データで見る変化 ===== -->
-    <section class="section">
-      <h2>データで見る変化</h2>
-      <div class="card grid2">
-        <figure>
-          <div class="baimg"><!-- ここに点数推移グラフの画像 -->
-            <!-- <img src="/assets/eiken/score-progress.png" alt="スコア推移" style="width:100%;height:100%;object-fit:contain"> -->
-            グラフ（点数推移）
-          </div>
-          <figcaption>※ 模試/過去問の自己採点ベース。詳細はnote参照。</figcaption>
-        </figure>
-        <div>
-          <div class="tagrow" style="margin-bottom:8px">
-            <span class="tag">総学習時間：○○時間</span>
-            <span class="tag">アウトプット日数：○○日</span>
-            <span class="tag">過去問：○○セット</span>
-          </div>
-          <ul>
-            <li><b>語彙：</b>高頻出3,000語を品詞クラスタで定着</li>
-            <li><b>読解：</b>設問先読み→根拠マーキング→選択肢排除の三段固定</li>
-            <li><b>リスニング：</b>パート別の「拾う音」を明確化してスコア安定</li>
-            <li><b>ライティング：</b>テンプレ×事例ネタで即時生成</li>
-          </ul>
-          <div class="note-embed" style="margin-top:10px">
-            <img src="/favicon.png" alt="note">
-            <div>
-              <div><b>詳細レポート</b></div>
-              <a href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">3ヶ月で3級→準1級に至るまで（note）</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== よくある質問 ===== -->
-    <section class="section">
-      <h2>Q&amp;A</h2>
-      <div class="qa">
-        <div class="qaitem">
-          <b>本当に3ヶ月で到達できますか？</b>
-          <p class="muted">前提の学力・時間確保で個人差はあります。ここでは「やるべき順序」と「無駄を削る設計」で最短距離を狙います。詳細は無料相談で現状をヒアリングして判断します。</p>
-        </div>
-        <div class="qaitem">
-          <b>使用教材は何ですか？</b>
-          <p class="muted">頻出語彙帳＋過去問＋音読素材を中心に、目的に合わせて最小構成に厳選します。</p>
-        </div>
-        <div class="qaitem">
-          <b>独学でもいけますか？</b>
-          <p class="muted">可能です。実例は独学ベース。ポイントは「順番・量・復習の設計」。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CTA ===== -->
-    <section class="section">
-      <div class="card">
-        <h2 style="margin-top:0">無料相談・モニター応募</h2>
-        <p class="muted">「自分の現在地で最短ルートを敷き直したい」人は気軽にどうぞ。学習設計の初回ヒアリングを行います。</p>
-        <div class="cta">
-          <a class="btn" id="contact" href="#contact">LINE / フォームへ</a>
-          <a class="btn sub" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細レポートを読む</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="section muted" style="font-size:13px">
-      競合に対する差別化：<b>短期×設計主義</b>（やる順序・捨てる判断・復習の厚み）。商材の羅列ではなく「実例で示す」ことを重視。
-    </footer>
-  </div>
-</body>
-</html>
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 80px}
+    .toplink{display:inline-flex;gap:8px;align-items:center;padding:8
