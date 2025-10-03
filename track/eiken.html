@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>英検：3ヶ月で3級→準1級に至るまで | UNMAKE</title>
-  <meta name="description" content="短期合格設計／3ヶ月で英検3級→準1級へ。数字・時系列・証拠で伝える実績ページ。">
+  <title>利用者実績：3ヶ月で3級→準1級に至るまで | UNMAKE</title>
+  <meta name="description" content="UNMAKEの短期合格設計。3ヶ月で英検3級→準1級へ。数字と時系列で伝える利用者実績ページ（ケース）。">
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
-  <!-- Fonts（モノトーンに合う骨太見た目） -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
@@ -52,19 +52,16 @@
     .stat{border:1px solid var(--line); border-radius:14px; padding:16px; background:#fff}
     .stat .label{font-size:12px; color:#777}
     .stat b{font-family:Inter,system-ui,sans-serif; font-variant-numeric:tabular-nums; font-size:30px; line-height:1}
-    /* Before/After（モノクロの情報設計） */
+    /* Before/After */
     .baflex{display:grid; grid-template-columns:1fr 1fr; gap:18px}
     .ba{border:1px solid var(--line); border-radius:14px; padding:16px; background:#fff}
     .pill{display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:#555; margin-left:6px}
     .ba ul{padding-left:1.1em; margin:10px 0 0}
-    /* Timeline（黒基調） */
+    /* Timeline */
     .timeline{position:relative}
     .timeline::before{content:""; position:absolute; left:14px; top:0; bottom:0; width:2px; background:#111}
     .step{position:relative; margin:0 0 18px 36px}
     .dot{position:absolute; left:-26px; top:6px; width:12px; height:12px; background:#111; border-radius:50%}
-    /* Proof（写真を主役に） */
-    .proof{border:1px solid var(--line-strong); border-radius:16px; overflow:hidden; background:#f7f7f7}
-    .proof img{width:100%; height:100%; object-fit:cover}
     /* Responsive */
     @media (max-width:980px){
       .herogrid{grid-template-columns:1fr}
@@ -80,12 +77,12 @@
     <a href="/index.html" class="toplink">← Top</a>
 
     <!-- ===== HERO ===== -->
-    <section class="hero">
-      <span class="badge">実績ケース / 英検</span>
+    <section class="hero" aria-labelledby="case-title">
+      <span class="badge">利用者実績（ケース） / 英検</span>
       <div class="herogrid">
         <div>
-          <h1>3ヶ月で <u>英検3級 → 準1級</u> に至るまで</h1>
-          <p class="lead">短期合格設計。数字と時系列、そして証拠で伝える“UNMAKEの実例”。</p>
+          <h1 id="case-title">3ヶ月で <u>英検3級 → 準1級</u> に至るまで</h1>
+          <p class="lead">短期合格設計。数字と時系列で伝える“UNMAKEの利用者実例”。</p>
 
           <div class="kpis">
             <div class="kpi"><div class="label">期間</div><b>90日</b></div>
@@ -99,17 +96,17 @@
           </div>
         </div>
 
-        <!-- 写真：横長1枚のみ（主役） -->
+        <!-- 写真：横長1枚 -->
         <figure class="heroimg">
-          <!-- 画像を /assets/eiken/passbooks-hero.jpg に配置 -->
+          <!-- /assets/eiken/passbooks-hero.jpg を配置 -->
           <img src="/assets/eiken/passbooks-hero.jpg" alt="英検準1級 合格証と単語帳">
         </figure>
       </div>
     </section>
 
     <!-- ===== 数字で見る ===== -->
-    <section class="section">
-      <h2>数字で見る実績</h2>
+    <section class="section" aria-labelledby="numbers">
+      <h2 id="numbers">数字で見る利用者ケース</h2>
       <div class="stats">
         <div class="stat"><div class="label">合格まで</div><b>90</b>日</div>
         <div class="stat"><div class="label">最大学習量（11月）</div><b>10</b>時間/日</div>
@@ -120,9 +117,9 @@
       <p class="muted">※ 詳細の背景・学習ログは <a href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">note記事</a> に掲載。</p>
     </section>
 
-    <!-- ===== Before / After（要点だけ、モノクロ） ===== -->
-    <section class="section">
-      <h2>Before / After</h2>
+    <!-- ===== Before / After ===== -->
+    <section class="section" aria-labelledby="ba">
+      <h2 id="ba">Before / After</h2>
       <div class="baflex">
         <div class="ba">
           <h3>Before <span class="pill">3級レベル</span></h3>
@@ -143,9 +140,9 @@
       </div>
     </section>
 
-    <!-- ===== 時系列（北原式の積み上げ） ===== -->
-    <section class="section">
-      <h2>時系列で見る 3ヶ月</h2>
+    <!-- ===== 時系列 ===== -->
+    <section class="section" aria-labelledby="timeline">
+      <h2 id="timeline">時系列で見る 3ヶ月</h2>
       <div class="card timeline">
         <div class="step">
           <span class="dot"></span>
@@ -170,18 +167,9 @@
       </div>
     </section>
 
-    <!-- ===== 証拠（写真を大きく1枚） ===== -->
-    <section class="section">
-      <h2>証拠</h2>
-      <div class="proof" style="aspect-ratio:16/9">
-        <img src="/assets/eiken/passbooks-hero.jpg" alt="英検準1級 合格証と単語帳（証拠写真）">
-      </div>
-      <p class="muted" style="font-size:12px; margin-top:6px">※ 追加の写真・点数推移グラフはnoteに掲載。</p>
-    </section>
-
-    <!-- ===== コア設計（短く・黒） ===== -->
-    <section class="section">
-      <h2>学習設計のコア</h2>
+    <!-- ===== 学習設計のコア ===== -->
+    <section class="section" aria-labelledby="core">
+      <h2 id="core">学習設計のコア</h2>
       <div class="card">
         <ul style="margin:8px 0">
           <li><b>やる順序：</b>語彙→文法→読解ブロック→音声→ライティング。</li>
@@ -191,22 +179,22 @@
       </div>
     </section>
 
-    <!-- ===== CTA（近接配置） ===== -->
-    <section class="section">
+    <!-- ===== CTA ===== -->
+    <section class="section" id="contact">
       <div class="card" style="display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap">
         <div>
           <h2 style="margin:0">無料相談・モニター応募</h2>
           <p class="muted" style="margin:6px 0 0">現在地をヒアリングし、あなた用の“最短ルート”を敷き直します。</p>
         </div>
         <div class="cta" style="margin:0">
-          <a class="btn" id="contact" href="#contact">LINE / フォームへ</a>
+          <a class="btn" href="https://lin.ee/" target="_blank" rel="noopener">LINE / フォームへ</a>
           <a class="btn outline" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細をnoteで読む</a>
         </div>
       </div>
     </section>
 
     <footer class="section muted" style="font-size:13px">
-      UNMAKEならではの強み：<b>“短期×設計主義”</b>（やる順序／捨てる判断／復習の厚み）。実例で示す。
+      UNMAKEならではの強み：<b>“短期×設計主義”</b>（やる順序／捨てる判断／復習の厚み）。利用者の実例で示す。
     </footer>
   </div>
 </body>
