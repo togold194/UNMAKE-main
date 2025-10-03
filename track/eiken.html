@@ -4,25 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>利用者実績：3ヶ月で3級→準1級に至るまで | UNMAKE</title>
-  <meta name="description" content="UNMAKEの短期合格設計。3ヶ月で英検3級→準1級へ。数字と時系列で伝える利用者実績ページ（ケース）。">
+  <meta name="description" content="UNMAKEの短期合格設計。3ヶ月で英検3級→準1級へ。数字と時系列で伝える利用者実績ケース。">
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#fff; --text:#111; --muted:#666; --line:#e5e5e5; --line-strong:#ddd; --card:#fff;
-      --black:#111; --shadow:0 12px 30px rgba(0,0,0,.06); --radius:18px;
-    }
+    :root{ --bg:#fff; --text:#111; --muted:#666; --line:#e5e5e5; --line-strong:#ddd; --card:#fff; --black:#111; --shadow:0 12px 30px rgba(0,0,0,.06); }
     *{box-sizing:border-box}
-    html,body{
-      margin:0; background:var(--bg); color:var(--text);
+    html,body{ margin:0; background:var(--bg); color:var(--text);
       font-family:"Zen Kaku Gothic New","Noto Sans JP",Inter,system-ui,-apple-system,Roboto,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
-      line-height:1.85; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; letter-spacing:.01em;
-      font-feature-settings:"palt" 1;
-    }
+      line-height:1.85; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; letter-spacing:.01em; font-feature-settings:"palt" 1;}
     a{color:var(--black); text-decoration:underline}
     .wrap{max-width:1120px; margin:0 auto; padding:28px 20px 96px}
     .toplink{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none}
@@ -30,7 +23,7 @@
     h2{font-size:clamp(20px,2.3vw,28px); margin:0 0 14px; letter-spacing:.01em}
     .lead{color:#444; margin:0}
     .divider{height:1px; background:var(--line); margin:24px 0}
-    /* ===== Hero ===== */
+    /* Hero */
     .hero{margin:28px 0 34px; border:1px solid var(--line-strong); border-radius:24px; padding:34px 26px; background:#fff; box-shadow:var(--shadow)}
     .herogrid{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center}
     .badge{display:inline-block; font-size:12px; letter-spacing:.08em; color:#555; border:1px solid var(--line); padding:4px 10px; border-radius:999px; background:#fff}
@@ -43,16 +36,16 @@
     .btn.outline{background:#fff; color:#111}
     .heroimg{position:relative; border:1px solid var(--line); border-radius:16px; overflow:hidden; min-height:260px; background:#f8f8f8}
     .heroimg img{width:100%; height:100%; object-fit:cover}
-    /* ===== Sections ===== */
+    /* Sections */
     .section{margin:48px 0}
     .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px}
     .muted{color:var(--muted)}
-    /* By the numbers */
+    /* Numbers */
     .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
     .stat{border:1px solid var(--line); border-radius:14px; padding:16px; background:#fff}
     .stat .label{font-size:12px; color:#777}
     .stat b{font-family:Inter,system-ui,sans-serif; font-variant-numeric:tabular-nums; font-size:30px; line-height:1}
-    /* Before/After */
+    /* BA */
     .baflex{display:grid; grid-template-columns:1fr 1fr; gap:18px}
     .ba{border:1px solid var(--line); border-radius:14px; padding:16px; background:#fff}
     .pill{display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:#555; margin-left:6px}
@@ -62,6 +55,8 @@
     .timeline::before{content:""; position:absolute; left:14px; top:0; bottom:0; width:2px; background:#111}
     .step{position:relative; margin:0 0 18px 36px}
     .dot{position:absolute; left:-26px; top:6px; width:12px; height:12px; background:#111; border-radius:50%}
+    /* Quote */
+    .quote{border-left:4px solid #111; padding:8px 12px; background:#fafafa; border-radius:6px}
     /* Responsive */
     @media (max-width:980px){
       .herogrid{grid-template-columns:1fr}
@@ -76,7 +71,7 @@
   <div class="wrap">
     <a href="/index.html" class="toplink">← Top</a>
 
-    <!-- ===== HERO ===== -->
+    <!-- HERO -->
     <section class="hero" aria-labelledby="case-title">
       <span class="badge">利用者実績（ケース） / 英検</span>
       <div class="herogrid">
@@ -95,16 +90,13 @@
             <a class="btn outline" href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">詳細をnoteで読む</a>
           </div>
         </div>
-
-        <!-- 写真：横長1枚 -->
         <figure class="heroimg">
-          <!-- /assets/eiken/passbooks-hero.jpg を配置 -->
           <img src="/assets/eiken/passbooks-hero.jpg" alt="英検準1級 合格証と単語帳">
         </figure>
       </div>
     </section>
 
-    <!-- ===== 数字で見る ===== -->
+    <!-- 数字で見る -->
     <section class="section" aria-labelledby="numbers">
       <h2 id="numbers">数字で見る利用者ケース</h2>
       <div class="stats">
@@ -114,10 +106,10 @@
         <div class="stat"><div class="label">実行フェーズ</div><b>独学</b>×設計</div>
       </div>
       <div class="divider"></div>
-      <p class="muted">※ 詳細の背景・学習ログは <a href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">note記事</a> に掲載。</p>
+      <p class="muted">※ 背景の詳細・学習ログは <a href="https://note.com/togold194/n/ndd0409430247" target="_blank" rel="noopener">note記事</a> に掲載。</p>
     </section>
 
-    <!-- ===== Before / After ===== -->
+    <!-- Before / After -->
     <section class="section" aria-labelledby="ba">
       <h2 id="ba">Before / After</h2>
       <div class="baflex">
@@ -140,34 +132,71 @@
       </div>
     </section>
 
-    <!-- ===== 時系列 ===== -->
+    <!-- 時系列：本文準拠 -->
     <section class="section" aria-labelledby="timeline">
       <h2 id="timeline">時系列で見る 3ヶ月</h2>
       <div class="card timeline">
         <div class="step">
           <span class="dot"></span>
-          <h3>9/16　準2級 不合格 → 方針転換</h3>
-          <p class="muted">準2級を切り、2級に集中。基礎の“面取り”から再設計。</p>
+          <h3>8月末　高校受験を決意 / 英語に全振り</h3>
+          <p class="muted">英語重視の入試（12/5）。準1級未取得だと不利。残り約3ヶ月で英語に特化。</p>
+        </div>
+        <div class="step">
+          <span class="dot"></span>
+          <h3>9/16　準2級 不合格 → 戦略転換</h3>
+          <p class="muted">準2級を切り、2級へ集中。基礎の“面取り”から再設計。</p>
         </div>
         <div class="step">
           <span class="dot"></span>
           <h3>10/30　英検2級 合格</h3>
-          <p class="muted">土台を固め、過去問はブロック循環で復習厚めに。</p>
+          <p class="muted">結果判明は12/1。土台固めと過去問のブロック循環で精度を上げる。</p>
         </div>
         <div class="step">
           <span class="dot"></span>
           <h3>11/23　準1級 合格最低点 1792点を初突破</h3>
-          <p class="muted">本番形式でラインを超え、仕上げへ。</p>
+          <p class="muted">本番形式の過去問で到達。※ライティングはAI採点、スコアはAI+公式換算表による換算。</p>
         </div>
         <div class="step">
           <span class="dot"></span>
-          <h3>12月　準1級 合格</h3>
-          <p class="muted">3ヶ月で3級相当→準1級到達。</p>
+          <h3>12/5　入試 合格</h3>
+          <p class="muted">英語重視の入試を突破。</p>
+        </div>
+        <div class="step">
+          <span class="dot"></span>
+          <h3>12月　英検 準1級 合格</h3>
+          <p class="muted">3ヶ月で3級相当→準1級に到達。</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== 学習設計のコア ===== -->
+    <!-- どんな風にやったか（本文の具体） -->
+    <section class="section" aria-labelledby="how">
+      <h2 id="how">どんな風にやったか（抜粋）</h2>
+      <div class="card">
+        <ul style="margin:8px 0">
+          <li>学園祭・体育祭の合間もパス単。鞄・手・パンフに単語をメモ、机いっぱいに単語（鉛筆）。</li>
+          <li>部活や移動・風呂の時間は常にリスニング。中国製イヤホンを常時装着。</li>
+          <li>過去問と問題集を回し、11月は <b>1日10時間</b> 英語に投下。</li>
+          <li>YouTubeで実践者の知見（例：もりてつさん、さむらい英語塾さん）を吸収。</li>
+          <li>ライティング/スピーキングはテンプレと知識の<strong>“設計ゲーム”</strong>として整備。</li>
+        </ul>
+      </div>
+      <p class="muted" style="margin-top:10px">※ 「努力は必ず報われる」とは限らないが、「無駄な努力はない」—回数と設計で自分のものに。</p>
+    </section>
+
+    <!-- メッセージ -->
+    <section class="section" aria-labelledby="message">
+      <h2 id="message">メッセージ</h2>
+      <div class="quote">
+        <p style="margin:0"><b>英語は才能じゃない。</b> 正しい方法と習慣があれば、誰でも短期間で一気に伸ばせる。</p>
+      </div>
+      <p class="muted" style="margin-top:8px">
+        ただし、がむしゃらだけでは期限内に結果を出しづらい。科目や仕事・生活との両立も踏まえて、
+        <b>一人ひとりの境遇に合った最短ルート</b>に敷き直すことが重要。
+      </p>
+    </section>
+
+    <!-- 学習設計のコア（据え置き） -->
     <section class="section" aria-labelledby="core">
       <h2 id="core">学習設計のコア</h2>
       <div class="card">
@@ -179,12 +208,19 @@
       </div>
     </section>
 
-    <!-- ===== CTA ===== -->
-    <section class="section" id="contact">
+    <!-- CTA：モニター募集（先着10名/無料） -->
+    <section class="section" id="contact" aria-labelledby="cta">
+      <h2 id="cta" class="sr-only" style="position:absolute;left:-9999px">お問い合わせ</h2>
       <div class="card" style="display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap">
         <div>
-          <h2 style="margin:0">無料相談・モニター応募</h2>
-          <p class="muted" style="margin:6px 0 0">現在地をヒアリングし、あなた用の“最短ルート”を敷き直します。</p>
+          <h2 style="margin:0">無料相談・モニター応募（先着10名）</h2>
+          <p class="muted" style="margin:6px 0 0">
+            目標・環境・金銭/時間制約まで踏まえた<b>あなた専用の最短ルート</b>を設計。
+            今だけ<b>1ヶ月の徹底サポートを無料</b>で実施中。
+          </p>
+          <p class="muted" style="margin:6px 0 0; font-size:12px">
+            ※ Before/After 等の成果共有にご協力いただける方を対象（個人名などの個人情報は公開しません）。
+          </p>
         </div>
         <div class="cta" style="margin:0">
           <a class="btn" href="https://lin.ee/" target="_blank" rel="noopener">LINE / フォームへ</a>
