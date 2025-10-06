@@ -86,7 +86,7 @@ nav a:hover {
 
 /* Hero */
 .hero {
-  min-height: 92vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,10 +111,12 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 56px;
+  font-size: clamp(1rem, 4vw, 3rem);
   line-height: 1.05;
   letter-spacing: 0.02em;
   margin: 0 0 16px;
+  white-space: nowrap;
+  
 }
 
 .hero p {
